@@ -14,6 +14,7 @@ class Hero:
         return Hero.__jumlah
 
     # METHOD BISA UNTUK OBJECT DAN CLASS
+
     @staticmethod
     def getJumlah3():
         return Hero.__jumlah
