@@ -7,6 +7,7 @@ class Hero:
         self.__armor = armor
         # self.info = "name {} : \n\thealth: {}".format(self.name,self.__health)
 
+    # METHOD abc.xyz(), PROPERTY abc.xyz, PROPOERTY UTK MENGGABUNGKAN GETTER & SETTER
     @property
     def info(self):
         return "name {} : \n\thealth: {}".format(self.name, self.__health)
@@ -15,10 +16,12 @@ class Hero:
     def armor(self):
         pass
 
+    # UNTUK MENGELUARKAN VALUE HASIL MANIPULASI SETTER
     @armor.getter
     def armor(self):
         return self.__armor
 
+    # UNTUK MENDEKLARASIKAN
     @armor.setter
     def armor(self, input):
         self.__armor = input
